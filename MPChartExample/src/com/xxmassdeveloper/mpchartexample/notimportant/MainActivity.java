@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        setTitle("MPAndroidChart Example");
+        setTitle("QuikBee CrowdHackathon");
 
         // initialize the utilities
         Utils.init(this);
@@ -306,20 +306,21 @@ public class MainActivity extends Activity implements OnItemClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         Intent i = null;
-
+  /*
         switch (item.getItemId()) {
             case R.id.viewGithub:
                 i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://github.com/PhilJay/MPAndroidChart"));
+                i.setData(Uri.parse("https://github.com/LeoLoupos"));
                 startActivity(i);
                 break;
-            case R.id.report:
+          case R.id.report:
                 i = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto", "philjay.librarysup@gmail.com", null));
                 i.putExtra(Intent.EXTRA_SUBJECT, "MPAndroidChart Issue");
                 i.putExtra(Intent.EXTRA_TEXT, "Your error report here...");
                 startActivity(Intent.createChooser(i, "Report Problem"));
                 break;
+
             case R.id.blog:
                 i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse("http://www.xxmassdeveloper.com"));
@@ -331,7 +332,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
                 startActivity(i);
                 break;
         }
-
+*/
         return true;
     }
 }
